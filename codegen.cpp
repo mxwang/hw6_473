@@ -222,7 +222,7 @@ void codegen() {
   }
   // Print out all of the generated code.
   std::error_code ErrInfo;
-  llvm::raw_ostream* filestream = new llvm::raw_fd_ostream("/home/rigel/hw6/out.s",ErrInfo, llvm::sys::fs::F_None);
+  llvm::raw_ostream* filestream = new llvm::raw_fd_ostream("/home/mwang30/473/hw6/codegen/out.s",ErrInfo, llvm::sys::fs::F_None);
   TheModule->print(*filestream,0);
 }
 
